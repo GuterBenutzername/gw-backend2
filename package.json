@@ -1,2 +1,10 @@
-"postgraphile": "^4.13.0",
-"prettier": "^3.4.2"
+{
+    "scripts": {
+        "dev": "postgraphile --subscriptions --watch --dynamic-json --no-setof-functions-contain-nulls --no-ignore-rbac --show-error-stack=json --extended-errors hint,detail,errcode --append-plugins @graphile-contrib/pg-simplify-inflector --export-schema-graphql schema.graphql --graphiql \"/\" --enhance-graphiql --allow-explain --enable-query-batching --legacy-relations omit --connection psql://127.0.0.1/gw --schema app_public"
+    },
+    "dependencies": {
+        "@graphile-contrib/pg-simplify-inflector": "^6.1.0",
+        "postgraphile": "^4.13.0",
+        "prettier": "^3.4.2"
+    }
+}
