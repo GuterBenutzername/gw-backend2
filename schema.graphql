@@ -467,7 +467,7 @@ input CreateAssignmentInput {
 """An input for mutations affecting `Assignment`"""
 input AssignmentInput {
   pk: Int
-  id: UUID!
+  id: UUID
   name: String
   grade: BigFloat
   weight: BigFloat
@@ -512,7 +512,7 @@ input CreateCourseInput {
 """An input for mutations affecting `Course`"""
 input CourseInput {
   pk: Int
-  id: UUID!
+  id: UUID
   name: String
 }
 
